@@ -23,51 +23,65 @@
             android:id="@+id/inputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/descLayout">
 
+            android:layout_alignLeft="@+id/descLayout" android:layout_below="@+id/descLayout"
+            android:layout_above="@+id/menu">
 
-        <TextView
-                android:id="@+id/playerOneName"
+        <RelativeLayout
+                android:id="@+id/playerOneInput"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/gameTypeDescription"
-                android:text="Player One Username"
-                />
+                android:layout_alignParentLeft="true"
+                >
+            <TextView
+                    android:id="@+id/playerOneName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Player One Username"/>
 
 
-        <Button
-                android:id="@+id/player1button"
-                android:layout_width="match_parent"
+            <Button
+                    android:id="@+id/player1button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="215dp"
+                    android:text="@string/playerOneButton"
+                    android:layout_below="@id/playerOneName"
+                    android:layout_alignRight="@+id/playerOneName" android:layout_alignLeft="@+id/playerOneName"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/playerTwoInput"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/playerOneName"
-                android:text="@string/playerOneButton"
-                />
+                android:layout_toRightOf="@id/playerOneInput"
+                >
 
+            <TextView
+            android:id="@+id/playerTwoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Player Two Username"
+            />
 
-        <Button
-                android:id="@+id/player2button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/playerTwoName"
-                android:text="@string/playerTwoButton"
-                />
+            <Button
+                    android:id="@+id/player2button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="216dp"
+                    android:text="@string/playerTwoButton"
+                    android:layout_below="@id/playerTwoName"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/playerTwoName"/>
 
-
-        <TextView
-                android:id="@+id/playerTwoName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/player1button"
-                android:text="Player Two Username"
-                />
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
             android:id="@+id/menu"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/inputLayout">
+            android:layout_height="53dp"
+            android:layout_centerHorizontal="true" android:layout_alignParentBottom="true">
         <Button
                 android:id="@+id/pause"
 
@@ -94,7 +108,6 @@
                 android:text="@string/save"
                 android:enabled="false"
                 />
-
 
 
     </RelativeLayout>

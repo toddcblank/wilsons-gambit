@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">Wilson\&#39;s Gambit</string>
     <string name="player">Player</string>
-    <string name="playerOneButton">Player One Time Remaining</string>
-    <string name="playerTwoButton">Player Two Time Remaining</string>
+    <string name="playerOneButton">5:00</string>
+    <string name="playerTwoButton">5:00</string>
     <string name="pause">Pause</string>
     <string name="restart">Reset</string>
     <string name="save">Save posistion</string>

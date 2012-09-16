@@ -1,6 +1,8 @@
 package com.mybuddywilson.chess.timer;
 
 import android.app.Activity;
+import android.os.Bundle;
+import com.mybuddywilson.R;
 
 /**
  * @Author: Todd
@@ -11,5 +13,13 @@ import android.app.Activity;
  *
  */
 public class TimerActivity extends Activity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.timer);
 
+
+    }
 }
