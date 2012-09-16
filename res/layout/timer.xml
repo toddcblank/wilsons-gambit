@@ -4,56 +4,64 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
         >
+
     <RelativeLayout
-            android:id="@+id/inputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-    <TextView
-            android:id="@+id/playerOneName"
-            android:layout_width="match_parent"
+            android:id="@+id/descLayout"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/gameTypeDescription"
-            android:text="Player One Username"
-            />
-
-
-    <Button
-            android:id="@+id/player1button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/playerOneName"
-            android:text="@string/playerOneButton"
-
-            />
-
-
-    <Button
-            android:id="@+id/player2button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/playerTwoName"
-            android:text="@string/playerTwoButton"
-            />
-
-
-    <TextView
-            android:id="@+id/playerTwoName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/player1button"
-            android:text="Player Two Username"
-            />
-
-    <TextView
-            android:id="@+id/gameTypeDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Game Type (5/0, 5/5, etc)"
-            />
+            android:layout_centerHorizontal="true"
+            >
+        <TextView
+                android:id="@+id/gameTypeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Game Type (5/0, 5/5, etc)"
+                />
 
     </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descLayout">
+
+
+        <TextView
+                android:id="@+id/playerOneName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gameTypeDescription"
+                android:text="Player One Username"
+                />
+
+
+        <Button
+                android:id="@+id/player1button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/playerOneName"
+                android:text="@string/playerOneButton"
+                />
+
+
+        <Button
+                android:id="@+id/player2button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/playerTwoName"
+                android:text="@string/playerTwoButton"
+                />
+
+
+        <TextView
+                android:id="@+id/playerTwoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/player1button"
+                android:text="Player Two Username"
+                />
+    </RelativeLayout>
+
     <RelativeLayout
             android:id="@+id/menu"
             android:layout_width="wrap_content"
@@ -61,14 +69,13 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/inputLayout">
         <Button
-                android:id="@+id/save"
+                android:id="@+id/pause"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/restart"
                 android:layout_alignParentBottom="true"
-                android:text="@string/save"
+                android:text="@string/pause"
                 />
-
         <Button
                 android:id="@+id/restart"
                 android:layout_width="wrap_content"
@@ -79,11 +86,16 @@
                 android:text="@string/restart"
                 />
         <Button
-            android:id="@+id/pause"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="@string/pause"
-            />
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/restart"
+                android:layout_alignParentBottom="true"
+                android:text="@string/save"
+                android:enabled="false"
+                />
+
+
+
     </RelativeLayout>
 </RelativeLayout>
