@@ -1,7 +1,8 @@
-package com.mybuddywilson;
+package com.mybuddywilson.menu;
 
 import android.app.Activity;
 import android.os.Bundle;
+import com.mybuddywilson.R;
 
 public class WilsonsGambitMenu extends Activity
 {
@@ -10,6 +11,6 @@ public class WilsonsGambitMenu extends Activity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.timer);
     }
 }

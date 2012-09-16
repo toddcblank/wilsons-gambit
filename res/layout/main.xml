@@ -7,7 +7,7 @@
 <TextView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Welcome to Rook's Gambit"
+    android:text="Welcome to Wilson's Gambit"
     />
 </LinearLayout>
 

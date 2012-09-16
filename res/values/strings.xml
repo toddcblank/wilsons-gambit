@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Wilson's Gambit</string>
+    <string name="app_name">Wilson\&#39;s Gambit</string>
+    <string name="player">Player</string>
+    <string name="playerOneButton">Player One Time Remaining</string>
+    <string name="playerTwoButton">Player Two Time Remaining</string>
+    <string name="pause">Pause</string>
+    <string name="restart">Reset</string>
+    <string name="save">Save posistion</string>
+    <color name="background">#000000</color>
+    <color name="text">#FFFFFF</color>
+
 </resources>

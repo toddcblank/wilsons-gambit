@@ -18,6 +18,10 @@ public class ChessTimer {
     private final int secondsPerMove;
     private AtomicInteger secondsLeft;
 
+    public ChessTimer() {
+        this(60 * 5);
+    }
+
     public ChessTimer(int secondsAtStart) {
         this(secondsAtStart, 0);
     }
