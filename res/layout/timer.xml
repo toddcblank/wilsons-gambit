@@ -94,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:text="@string/pause"
+                android:onClick="handleClick"
                 />
         <Button
                 android:id="@+id/restart"
@@ -103,6 +104,7 @@
                 android:layout_alignParentBottom="true"
 
                 android:text="@string/restart"
+                android:onClick="handleClick"
                 />
         <Button
                 android:id="@+id/save"
