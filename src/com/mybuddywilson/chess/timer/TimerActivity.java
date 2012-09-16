@@ -29,17 +29,17 @@ public class TimerActivity extends Activity {
         setContentView(R.layout.timer);
 
         playerOneClock = (Button) findViewById(R.id.playerOneTimer);
-        playerOneClock.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                handleClick(view);
-            }
-        });
+//        playerOneClock.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//                handleClick(view);
+//            }
+//        });
         playerTwoClock = (Button) findViewById(R.id.playerTwoTimer);
-        playerTwoClock.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                handleClick(view);
-            }
-        });
+//        playerTwoClock.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//                handleClick(view);
+//            }
+//        });
     }
 
 
@@ -57,10 +57,16 @@ public class TimerActivity extends Activity {
     private void playerOneClick(){
         playerOneClock.setEnabled(false);
         playerTwoClock.setEnabled(true);
+        playerTwoClock.setText("ENABLED");
+        playerOneClock.setText("");
+
 
     }
     private void playerTwoClick(){
         playerOneClock.setEnabled(true);
         playerTwoClock.setEnabled(false);
+
+        playerTwoClock.setText("");
+        playerOneClock.setText("ENABLED");
     }
 }

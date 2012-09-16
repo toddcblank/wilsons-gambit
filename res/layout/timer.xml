@@ -47,6 +47,7 @@
                     android:layout_alignRight="@+id/playerOneName"
                     android:layout_alignLeft="@+id/playerOneName"
                     android:layout_alignParentBottom="true"
+                    android:onClick="handleClick"
                     />
 
         </RelativeLayout>
@@ -74,6 +75,7 @@
                     android:layout_alignRight="@+id/playerTwoName"
                     android:layout_alignLeft="@+id/playerTwoName"
                     android:layout_alignParentBottom="true"
+                    android:onClick="handleClick"
                     />
         </RelativeLayout>
 
