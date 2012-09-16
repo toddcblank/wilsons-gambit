@@ -5,11 +5,12 @@ Android based Chess Timer, game archive, and RFID board reader
 
 Completed Features:
 * Readme file.
+* Two Player chess timer
+    * Pause
 
 Future Features:
 * Two Player chess timer
 	* Per-Player adjustable time limit
-	* Pause
 	* +x seconds per move
 * User profiles with ranking
 * read board state from RFID chess board
