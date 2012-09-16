@@ -1,4 +1,7 @@
 local.properties
 project.properties
 ant.properties
-rooks-gambit.iml
+*.iml
+gen
+.idea
+out
