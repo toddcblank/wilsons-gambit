@@ -39,15 +39,16 @@
                     android:layout_height="wrap_content"
 
                     android:text="Player One Username"/>
-
-
             <Button
-                    android:id="@+id/player1button"
                     android:layout_width="wrap_content"
-                    android:layout_height="215dp"
-                    android:text="@string/playerOneButton"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playerOneTimer"
                     android:layout_below="@id/playerOneName"
-                    android:layout_alignRight="@+id/playerOneName" android:layout_alignLeft="@+id/playerOneName"/>
+                    android:layout_alignRight="@+id/playerOneName"
+                    android:layout_alignLeft="@+id/playerOneName"
+                    android:layout_alignParentBottom="true"
+                    />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -58,23 +59,25 @@
                 >
 
             <TextView
-            android:id="@+id/playerTwoName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="Player Two Username"
-            />
+                    android:id="@+id/playerTwoName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Player Two Username"
+                    />
 
             <Button
-                    android:id="@+id/player2button"
                     android:layout_width="wrap_content"
-                    android:layout_height="216dp"
-                    android:text="@string/playerTwoButton"
-                    android:layout_below="@id/playerTwoName"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignLeft="@+id/playerTwoName"/>
-
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playerTwoTimer"
+                    android:layout_below="@+id/playerTwoName"
+                    android:layout_alignRight="@+id/playerTwoName"
+                    android:layout_alignLeft="@+id/playerTwoName"
+                    android:layout_alignParentBottom="true"
+                    />
         </RelativeLayout>
+
+
     </RelativeLayout>
 
     <RelativeLayout
